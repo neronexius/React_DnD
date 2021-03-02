@@ -1,0 +1,48 @@
+*{
+}
+
+.home_page{
+    background: rgb(40, 40, 78);
+    height: 100vh;
+
+    .drag-n-drop{
+        color:white;
+        display: grid;
+        height: 100%;
+        width: 100%;
+        grid-template-columns: repeat(auto-fill,300px);
+        gap: .5rem;
+        align-items: start;
+        
+        .dnd-group{
+            background-color: rgb(98, 98, 129);
+            padding: .5rem;
+            border-radius: 5px;
+            min-height: 150px;
+        }
+
+        .group_title{
+            margin-bottom: 0.5rem;
+        }
+        .dnd-item{
+            background-color: white;
+            color: rgb(40, 40, 78);
+            min-height: 150px;
+            border-radius: 5px;
+        }
+        .current{
+            background-color: rgb(98, 98, 129);
+        }
+
+        .dnd-item:not(:last-of-type){
+            margin-bottom: 0.5rem;
+        }
+
+        .dnd-item *{
+            margin: 0;
+            text-align: center;
+        }
+    
+    }
+
+}
